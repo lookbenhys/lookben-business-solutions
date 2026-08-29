@@ -1,41 +1,21 @@
-/* Control de Menú Móvil */
-function toggleMenu() {
-  const navLinks = document.getElementById('navlinks');
-  if (navLinks) {
-    navLinks.classList.toggle('open');
-  }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const navLinks = document.getElementById('navlinks');
-  if (navLinks) {
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-      });
-    });
-  }
-});
-
-/* Envío de Consulta a WhatsApp */
-function enviarConsultaOperaciones(event) {
+/* Envío de Consulta de Seguridad e Higiene */
+function enviarConsultaHyS(event) {
   event.preventDefault();
 
-  const empresa = document.getElementById('f_empresa').value.trim();
-  const contacto = document.getElementById('f_contacto').value.trim();
-  const sedes = document.getElementById('f_sedes').value;
-  const interes = document.getElementById('f_interes').value;
-  const mensaje = document.getElementById('f_mensaje').value.trim();
+  const nombre = document.getElementById('hys_nombre').value.trim();
+  const tel = document.getElementById('hys_tel').value.trim();
+  const servicio = document.getElementById('hys_servicio').value;
+  const mensaje = document.getElementById('hys_mensaje').value.trim();
 
-  let texto = `Hola LOOKBEN! Mi nombre es ${contacto}, de la empresa *${empresa}*.\n\n`;
-  texto += `📍 *Estructura:* ${sedes}\n`;
-  texto += `🎯 *Interés:* ${interes}\n`;
+  let texto = `Hola LOOKBEN! Mi nombre es *${nombre}*.\n\n`;
+  texto += `📞 *Teléfono:* ${tel}\n`;
+  texto += `🛡️ *Servicio de interés:* ${servicio}\n`;
   if (mensaje) {
     texto += `💬 *Consulta:* ${mensaje}\n\n`;
   } else {
     texto += `\n`;
   }
-  texto += `Quisiera coordinar una reunión para evaluar nuestra operación.`;
+  texto += `Quisiera solicitar asesoramiento y cotización.`;
 
   const telefonoLOOKBEN = "5493624313645";
   const urlWhatsApp = `https://wa.me/${telefonoLOOKBEN}?text=${encodeURIComponent(texto)}`;
