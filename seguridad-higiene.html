@@ -1,171 +1,30 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seguridad e Higiene Laboral · LOOKBEN</title>
-  <meta name="description" content="Servicios integrales de Higiene y Seguridad Laboral en Salta. Habilitaciones comerciales, estudios de seguridad COPAIPA, mediciones técnicas y servicio mensual.">
-  <link rel="icon" type="image/png" href="assets/logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <nav>
     <div class="container nav-in">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/logo.png" alt="LOOKBEN">
-        <span><span class="look">LOOK</span><span class="ben">BEN</span></span>
-      </a>
-      <div class="nav-links" id="navlinks">
-        <a href="index.html">← Volver al Hub Principal</a>
-        <a href="#servicios">Servicios</a>
-        <a href="estudio-seguridad.html">Estudios COPAIPA</a>
-        <a href="#contacto">Contacto</a>
-        <a href="https://wa.me/5493624313645?text=Hola%20LOOKBEN!%20Quiero%20consultar%20por%20Seguridad%20e%20Higiene." class="nav-cta">WhatsApp</a>
-      </div>
-      <div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+      <a href="index.html" class="nav-logo"><span><span class="look">LOOK</span><span class="ben">BEN</span></span></a>
+      <div class="nav-links"><a href="index.html">← Volver al Hub</a><a href="https://wa.me/5493624313645" class="nav-cta">WhatsApp</a></div>
     </div>
   </nav>
-
-  <header class="hero" style="background: linear-gradient(135deg, var(--teal) 0%, var(--azul) 100%); padding: 70px 0 80px;">
-    <div class="container hero-grid">
-      <div>
-        <span class="tag-eyebrow" style="color:var(--gris)">Pilar 01 · Servicio Consolidado</span>
-        <h1>Seguridad e Higiene <span class="hl">Profesional</span></h1>
-        <p>Soluciones técnicas y legales para proteger a tus colaboradores, habilitar tus instalaciones y dar cumplimiento estricto a la Ley 19.587 y normativas municipales.</p>
-        <div class="hero-cta">
-          <a href="https://wa.me/5493624313645?text=Hola%20LOOKBEN!%20Necesito%20asesoramiento%20en%20Seguridad%20e%20Higiene." class="btn btn-wa">
-            💬 Consultar con un profesional
-          </a>
-          <a href="#servicios" class="btn btn-outline">Ver los 6 servicios</a>
-        </div>
-      </div>
-      <div class="hero-card hero-widget">
-        <div class="hw-header">
-          <div class="hw-badge" style="background:rgba(0,167,157,0.15);color:var(--teal)">MARCO NORMATIVO</div>
-          <div class="hw-status"><span class="dot" style="background:var(--teal)"></span> Vigente</div>
-        </div>
-        <div class="hw-stats-grid">
-          <div class="hw-stat">
-            <span class="hw-stat-val">COPAIPA</span>
-            <span class="hw-stat-lbl">Visados Profesionales</span>
-          </div>
-          <div class="hw-stat">
-            <span class="hw-stat-val">ART</span>
-            <span class="hw-stat-lbl">Gestión de Requerimientos</span>
-          </div>
-        </div>
-        <div class="hw-tags">
-          <span>Ley 19.587</span>
-          <span>Dec. 351/79</span>
-          <span>Habilitaciones</span>
-        </div>
-      </div>
+  <header class="hero" style="padding: 70px 0;">
+    <div class="container">
+      <span class="tag-eyebrow" style="color:var(--celeste)">Pilar 01</span>
+      <h1>Seguridad e Higiene Laboral</h1>
+      <p>Habilitaciones comerciales, estudios COPAIPA, mediciones y servicio mensual ART.</p>
     </div>
   </header>
-
-  <!-- LOS 6 SERVICIOS ORIGINALES COMPLETOS -->
-  <section class="section" id="servicios">
-    <div class="container center">
-      <span class="tag-eyebrow">Cartera Integral</span>
-      <h2 class="h2">Servicios de Seguridad e Higiene</h2>
-      <p class="lead" style="margin-bottom: 48px;">Estructura completa de servicios especializados para comercios, oficinas, industrias y obras.</p>
-    </div>
-
+  <section class="section">
     <div class="container pilar-grid">
-      <!-- SERVICIO 1 -->
-      <div class="pcard">
-        <div class="pcard-ic" style="background:var(--teal)">🏪</div>
-        <h3>Habilitaciones Comerciales</h3>
-        <p>Gestión técnica integral ante la Municipalidad de Salta, Bomberos y organismos de control.</p>
-        <ul class="pcard-list">
-          <li>Relevamiento in situ y adecuación técnica</li>
-          <li>Cálculo de carga de fuego y dotación extintora</li>
-          <li>Acompañamiento hasta la obtención del certificado</li>
-        </ul>
-      </div>
-
-      <!-- SERVICIO 2 -->
-      <div class="pcard featured">
-        <div class="pcard-ic" style="background:var(--azul)">📐</div>
-        <h3>Estudios de Seguridad (COPAIPA)</h3>
-        <p>Elaboración y firma de estudios técnicos con visado profesional colegiado.</p>
-        <ul class="pcard-list">
-          <li>Memorias descriptivas y cálculo de medios de salida</li>
-          <li>Planos de evacuación y señalética normalizada</li>
-          <li><a href="estudio-seguridad.html" style="color:var(--azul);font-weight:700;">Ver detalle del Estudio de Seguridad →</a></li>
-        </ul>
-      </div>
-
-      <!-- SERVICIO 3 -->
-      <div class="pcard">
-        <div class="pcard-ic" style="background:var(--salmon)">🚨</div>
-        <h3>Planes de Evacuación & Autoprotección</h3>
-        <p>Procedimientos claros ante emergencias, roles de brigadas y simulacros.</p>
-        <ul class="pcard-list">
-          <li>Organización y capacitación de brigadistas</li>
-          <li>Cronograma y ejecución de simulacros anuales</li>
-          <li>Planos de rol de llamada y puntos de encuentro</li>
-        </ul>
-      </div>
-
-      <!-- SERVICIO 4 -->
-      <div class="pcard">
-        <div class="pcard-ic" style="background:var(--violeta)">🔬</div>
-        <h3>Mediciones Técnicas de Ambiente</h3>
-        <p>Mediciones de campo con instrumental calibrado y certificado oficial.</p>
-        <ul class="pcard-list">
-          <li>Puesta a tierra y continuidad (Res. SRT 900/15)</li>
-          <li>Nivel de iluminación laboral (Res. SRT 84/12)</li>
-          <li>Nivel sonoro continuo y ruido (Res. SRT 85/12)</li>
-        </ul>
-      </div>
-
-      <!-- SERVICIO 5 -->
-      <div class="pcard">
-        <div class="pcard-ic" style="background:var(--azul)">👥</div>
-        <h3>Capacitaciones de Personal</h3>
-        <p>Formación obligatoria y preventiva adaptada al riesgo real del puesto de trabajo.</p>
-        <ul class="pcard-list">
-          <li>Uso y manejo de extintores y lucha contra el fuego</li>
-          <li>Primeros auxilios y RCP básico</li>
-          <li>Ergonomía, posturas y uso de EPP</li>
-        </ul>
-      </div>
-
-      <!-- SERVICIO 6 -->
-      <div class="pcard">
-        <div class="pcard-ic" style="background:var(--teal)">🛡️</div>
-        <h3>Servicio Externo Mensual (SySO)</h3>
-        <p>Asesoramiento técnico continuo, gestión de legajo técnico y atención a la ART.</p>
-        <ul class="pcard-list">
-          <li>Cumplimiento de horas profesionales según Dec. 351/79</li>
-          <li>Respuesta a intimaciones y auditorías de ART</li>
-          <li>Investigación de accidentes y estadísticas de siniestralidad</li>
-        </ul>
-      </div>
+      <div class="pcard"><h3>Habilitaciones Comerciales</h3><p>Gestión técnica municipal y cálculo de carga de fuego.</p></div>
+      <div class="pcard"><h3>Estudios COPAIPA</h3><p>Memorias descriptivas, cálculo de salidas y planos de evacuación.</p></div>
+      <div class="pcard"><h3>Mediciones Laborales</h3><p>Puesta a tierra (Res. 900/15), iluminación (Res. 84/12) y ruido.</p></div>
     </div>
   </section>
-
-  <!-- CTA FINAL -->
-  <section class="ctaband">
-    <div class="container">
-      <h2>¿Necesitás regularizar tu establecimiento o gestionar tu ART?</h2>
-      <p>Ponete en contacto directo con nuestros profesionales para recibir una cotización a medida.</p>
-      <a href="https://wa.me/5493624313645?text=Hola%20LOOKBEN!%20Quiero%20cotizar%20un%20servicio%20de%20Seguridad%20e%20Higiene." class="btn btn-wa" style="background:#fff;color:var(--violeta);">
-        💬 Iniciar consulta por WhatsApp
-      </a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container foot-bottom">
-      © 2026 LOOKBEN · Seguridad e Higiene Laboral · Salta, Argentina.
-      <p><a href="index.html" style="color:var(--celeste)">← Volver a la portada principal</a></p>
-    </div>
-  </footer>
-
-  <script src="app.js"></script>
 </body>
 </html>
