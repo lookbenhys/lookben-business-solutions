@@ -1,30 +1,169 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>COF & Gestión de Gastos Operativos · LOOKBEN</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <nav>
     <div class="container nav-in">
-      <a href="index.html" class="nav-logo"><span><span class="look">LOOK</span><span class="ben">BEN</span></span></a>
-      <div class="nav-links"><a href="index.html">← Volver al Hub</a><a href="https://wa.me/5493624313645" class="nav-cta">WhatsApp</a></div>
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="LOOKBEN" onerror="this.style.display='none'">
+        <span><span class="look">LOOK</span><span class="ben">BEN</span></span>
+      </a>
+      <div class="nav-links" id="navlinks">
+        <a href="index.html">← Volver al Hub Principal</a>
+        <a href="#auditoria">Auditoría COF</a>
+        <a href="#budget">Budget & Forecast</a>
+        <a href="#footprint">Footprint</a>
+        <a href="https://wa.me/5493624313645?text=Hola%20LOOKBEN!%20Quiero%20consultar%20por%20Control%20de%20COF%20y%20Gastos%20Operativos." class="nav-cta">WhatsApp</a>
+      </div>
+      <div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
     </div>
   </nav>
-  <header class="hero" style="padding: 70px 0;">
-    <div class="container">
-      <span class="tag-eyebrow" style="color:var(--celeste)">Pilar 03</span>
-      <h1>COF & Gestión de Gastos Operativos</h1>
-      <p>Auditoría de facturas, control presupuestario y palancas de ahorro en facilities.</p>
+
+  <header class="hero" style="background: linear-gradient(135deg, var(--violeta) 0%, #1f2b47 100%); padding: 70px 0 80px;">
+    <div class="container hero-grid">
+      <div>
+        <span class="tag-eyebrow" style="color:var(--celeste)">Pilar 03 · Control & Eficiencia Financiera</span>
+        <h1>COF & Gestión de <span class="hl">Gastos Operativos</span></h1>
+        <p>Transformamos facturas y costos dispersos en datos estratégicos. Auditamos contratos, proyectamos presupuestos y detectamos oportunidades reales de eficiencia.</p>
+        <div class="hero-cta">
+          <a href="https://wa.me/5493624313645?text=Hola%20LOOKBEN!%20Quiero%20analizar%20los%20gastos%20operativos%20de%20nuestra%20empresa." class="btn btn-wa">
+            Analizar gastos operativos
+          </a>
+          <a href="#auditoria" class="btn btn-outline">Ver metodología</a>
+        </div>
+      </div>
+      <div class="hero-card hero-widget">
+        <div class="hw-header">
+          <div class="hw-badge">ANÁLISIS COF & FACILITIES</div>
+          <div class="hw-status"><span class="dot"></span> Control de Desvíos</div>
+        </div>
+        <div class="hw-stats-grid">
+          <div class="hw-stat">
+            <span class="hw-stat-val">Budget</span>
+            <span class="hw-stat-lbl">vs. Real Mensual</span>
+          </div>
+          <div class="hw-stat">
+            <span class="hw-stat-val">-$ / m²</span>
+            <span class="hw-stat-lbl">Optimización Footprint</span>
+          </div>
+        </div>
+        <div class="hw-tags">
+          <span>Auditoría de Facturas</span>
+          <span>Forecast Predictivo</span>
+          <span>Energía & Servicios</span>
+        </div>
+      </div>
     </div>
   </header>
-  <section class="section">
-    <div class="container pilar-grid">
-      <div class="pcard"><h3>Auditoría de Contratos</h3><p>Control de horas y servicios reales en contratos de limpieza y seguridad.</p></div>
-      <div class="pcard"><h3>Budget & Forecast</h3><p>Proyecciones mensuales ajustadas por inflación y estacionalidad.</p></div>
-      <div class="pcard"><h3>Footprint ($/m²)</h3><p>Métricas de costo por puesto de trabajo y optimización de energía.</p></div>
+
+  <!-- AUDITORIA COF -->
+  <section class="section" id="auditoria">
+    <div class="container">
+      <span class="tag-eyebrow">Gobernanza Financiera</span>
+      <h2 class="h2">Auditoría & Trazabilidad del Gasto</h2>
+      <p class="lead" style="margin-bottom: 36px;">Revisión rigurosa de cada concepto facturado por proveedores de limpieza, seguridad física, mantenimiento y servicios generales.</p>
+
+      <div class="pilar-grid">
+        <div class="pcard">
+          <div class="pcard-ic" style="background:var(--violeta)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3>Control de Contratos & SLA</h3>
+          <p>Verificación de correspondencia entre lo facturado y las horas, dotaciones y servicios efectivamente prestados en cada sede.</p>
+        </div>
+        <div class="pcard">
+          <div class="pcard-ic" style="background:var(--azul)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Detección de Desvíos</h3>
+          <p>Identificación de cobros indebidos, adicionales no autorizados o variaciones de precios fuera de convenio.</p>
+        </div>
+        <div class="pcard">
+          <div class="pcard-ic" style="background:var(--teal)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Imputación por Sede</h3>
+          <p>Asignación transparente de costos para conocer el gasto real unitario por sucursal o centro de costos.</p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- BUDGET Y PALANCAS -->
+  <section class="section" style="background:var(--gris)" id="budget">
+    <div class="container grid-2col">
+      <div class="special-card">
+        <div class="sc-head">
+          <div class="sc-ic" style="background:var(--azul)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div><h3>Budget & Forecast Dinámico</h3><span class="sc-sub">Previsibilidad Financiera</span></div>
+        </div>
+        <p>Construcción de presupuestos anuales y proyecciones mensuales ajustadas por inflación, estacionalidad y mantenimiento mayor.</p>
+        <ul class="pcard-list">
+          <li>Modelado de escenarios de costos operativos.</li>
+          <li>Seguimiento de variaciones mes a mes.</li>
+          <li>Reportes para gerencias de administración y finanzas.</li>
+        </ul>
+      </div>
+
+      <div class="special-card">
+        <div class="sc-head">
+          <div class="sc-ic" style="background:var(--salmon)">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <div><h3>Palancas de Eficiencia</h3><span class="sc-sub">Optimización de Suministros</span></div>
+        </div>
+        <p>Búsqueda sistemática de oportunidades de reducción de costos mediante consolidación de compras y revisión tarifaria.</p>
+        <ul class="pcard-list">
+          <li>Consolidación de compras de insumos (SIGCIL).</li>
+          <li>Optimización de contratos de energía y potencias.</li>
+          <li>Eliminación de horas ociosas en servicios tercerizados.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTPRINT -->
+  <section class="section" id="footprint">
+    <div class="container center">
+      <span class="tag-eyebrow">Métricas Inmobiliarias</span>
+      <h2 class="h2">Análisis de Footprint Operativo</h2>
+      <p class="lead">Medimos la eficiencia de tus metros cuadrados para optimizar el costo de ocupación y los servicios asociados.</p>
+      <div class="sectors" style="margin-top:28px;">
+        <div class="sector">Costo Operativo por m²</div>
+        <div class="sector">Gasto por Puesto de Trabajo</div>
+        <div class="sector">Consumo Energético por Sede</div>
+        <div class="sector">Ratio Insumos / Ocupación</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ctaband">
+    <div class="container">
+      <h2>¿Querés optimizar tus costos operativos?</h2>
+      <p>Realizamos un diagnóstico preliminar de tus contratos y gastos de facilities sin compromiso.</p>
+      <a href="https://wa.me/5493624313645?text=Hola%20LOOKBEN!%20Quiero%20coordinar%20una%20auditor%C3%ADa%20de%20gastos%20COF." class="btn btn-wa" style="background:#fff;color:var(--violeta);">
+        Iniciar auditoría preliminar
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot-bottom">
+      © 2026 LOOKBEN · COF & Gestión de Gastos Operativos · Salta, Argentina.
+      <p style="margin-top:10px;"><a href="index.html" style="color:var(--celeste)">← Volver a la portada principal</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
