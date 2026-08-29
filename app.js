@@ -1,19 +1,45 @@
-﻿function toggleMenu() {
-  const nav = document.getElementById('navlinks');
-  if (nav) nav.classList.toggle('open');
+/* Control de Menú Móvil */
+function toggleMenu() {
+  const navLinks = document.getElementById('navlinks');
+  if (navLinks) {
+    navLinks.classList.toggle('open');
+  }
 }
-function enviarConsultaOperaciones(e) {
-  e.preventDefault();
-  const empresa = document.getElementById('f_empresa').value;
-  const contacto = document.getElementById('f_contacto').value;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.getElementById('navlinks');
+  if (navLinks) {
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+  }
+});
+
+/* Envío de Consulta a WhatsApp */
+function enviarConsultaOperaciones(event) {
+  event.preventDefault();
+
+  const empresa = document.getElementById('f_empresa').value.trim();
+  const contacto = document.getElementById('f_contacto').value.trim();
   const sedes = document.getElementById('f_sedes').value;
   const interes = document.getElementById('f_interes').value;
-  const mensaje = document.getElementById('f_mensaje').value;
+  const mensaje = document.getElementById('f_mensaje').value.trim();
 
-  let texto = "Hola LOOKBEN! Soy " + contacto + " de " + empresa + ".\n" +
-              "Sedes: " + sedes + "\n" +
-              "Interes: " + interes + "\n" +
-              "Consulta: " + mensaje;
-  window.open("https://wa.me/5493624313645?text=" + encodeURIComponent(texto), '_blank');
+  let texto = `Hola LOOKBEN! Mi nombre es ${contacto}, de la empresa *${empresa}*.\n\n`;
+  texto += `📍 *Estructura:* ${sedes}\n`;
+  texto += `🎯 *Interés:* ${interes}\n`;
+  if (mensaje) {
+    texto += `💬 *Consulta:* ${mensaje}\n\n`;
+  } else {
+    texto += `\n`;
+  }
+  texto += `Quisiera coordinar una reunión para evaluar nuestra operación.`;
+
+  const telefonoLOOKBEN = "5493624313645";
+  const urlWhatsApp = `https://wa.me/${telefonoLOOKBEN}?text=${encodeURIComponent(texto)}`;
+
+  window.open(urlWhatsApp, '_blank');
   return false;
 }
