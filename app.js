@@ -1,38 +1,47 @@
-const modalData={
-  hys:{
-    title:"Seguridad e Higiene",
-    sub:"Prevención · Cumplimiento · Protección",
-    text:"Servicio profesional orientado a gestionar las necesidades de Seguridad e Higiene de la operación.",
-    items:["Estudio de Seguridad","Incendios","Planes de Evacuación","Mediciones de Higiene","Servicio Externo HyS","Capacitaciones"]
-  },
-  facility:{
-    title:"Mantenimiento y Adecuaciones",
-    sub:"Infraestructura · Continuidad · Mejora",
-    text:"Mantenimiento, infraestructura y adecuaciones con planificación, seguimiento y control de la operación.",
-    items:["Mantenimiento Integral","Adecuaciones y Obras","Gestión de Edificios","Gestión de Proveedores","Energía y Potencias","Space Planning y Footprint Operativo","CAPEX"]
-  },
-  cof:{
-    title:"Gestión de COF y Gastos Operativos",
-    sub:"Control · Análisis · Eficiencia",
-    text:"Auditoría, seguimiento y análisis de gastos operativos para identificar desvíos, oportunidades y palancas de eficiencia.",
-    items:["Auditoría y Gestión de COF","Budget & Forecast","Trazabilidad de Gastos Operativos","Administración y Evaluación de Proveedores","Desgloses de Rentabilidad","Análisis de Pareto","Palancas de Eficiencia","Diseño de KPIs y Dashboard Ejecutivo"]
+/* ===== Control de Navegación Móvil ===== */
+function toggleMenu() {
+  const navLinks = document.getElementById('navlinks');
+  if (navLinks) {
+    navLinks.classList.toggle('open');
   }
-};
+}
 
-const overlay=document.getElementById("modalOverlay");
-const content=document.getElementById("modalContent");
-document.querySelectorAll(".detail-btn").forEach(btn=>{
-  btn.addEventListener("click",()=>{
-    const d=modalData[btn.dataset.modal];
-    content.innerHTML=`<div class="eyebrow">${d.sub}</div><h2>${d.title}</h2><p>${d.text}</p><h4>Alcance</h4><ul>${d.items.map(x=>`<li>${x}</li>`).join("")}</ul><div class="modal-cta"><a class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/5493624313645?text=${encodeURIComponent("Hola LOOKBEN! Quiero consultar por "+d.title+".")}">Consultar por este servicio</a></div>`;
-    overlay.classList.add("open"); document.body.style.overflow="hidden";
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.getElementById('navlinks');
+  if (navLinks) {
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+  }
 });
-function closeModal(){overlay.classList.remove("open");document.body.style.overflow="";}
-document.getElementById("modalClose").addEventListener("click",closeModal);
-overlay.addEventListener("click",e=>{if(e.target===overlay)closeModal()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
 
-const burger=document.getElementById("burger"), nav=document.getElementById("navLinks");
-burger.addEventListener("click",()=>nav.classList.toggle("open"));
-nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+/* ===== Formulario Dinámico a WhatsApp ===== */
+function enviarConsultaOperaciones(event) {
+  event.preventDefault();
+
+  const empresa = document.getElementById('f_empresa').value.trim();
+  const contacto = document.getElementById('f_contacto').value.trim();
+  const sedes = document.getElementById('f_sedes').value;
+  const interes = document.getElementById('f_interes').value;
+  const mensaje = document.getElementById('f_mensaje').value.trim();
+
+  // Construcción del mensaje predefinido para WhatsApp
+  let texto = `Hola LOOKBEN! Mi nombre es ${contacto}, de la empresa *${empresa}*.\n\n`;
+  texto += `📍 *Estructura:* ${sedes}\n`;
+  texto += `🎯 *Interés:* ${interes}\n`;
+  
+  if (mensaje) {
+    texto += `💬 *Consulta:* ${mensaje}\n\n`;
+  } else {
+    texto += `\n`;
+  }
+  texto += `Quisiera coordinar una reunión para evaluar nuestra operación.`;
+
+  const telefonoLOOKBEN = "5493624313645";
+  const urlWhatsApp = `https://wa.me/${telefonoLOOKBEN}?text=${encodeURIComponent(texto)}`;
+
+  window.open(urlWhatsApp, '_blank');
+  return false;
+}
