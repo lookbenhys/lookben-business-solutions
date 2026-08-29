@@ -1,233 +1,458 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LOOKBEN · Gestión Integral de Operaciones | Salta</title>
-<meta name="description" content="LOOKBEN · Gestión Integral de Operaciones en Salta. Seguridad e Higiene, Mantenimiento y Adecuaciones, Gestión de COF y Gastos Operativos.">
-<meta name="author" content="LOOKBEN">
-<meta property="og:title" content="LOOKBEN · Gestión Integral de Operaciones">
-<meta property="og:description" content="Seguridad, infraestructura y eficiencia bajo un mismo modelo de gestión.">
-<meta property="og:type" content="website">
-<link rel="icon" type="image/png" href="assets/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOOKBEN · Gestión Integral de Operaciones | Salta, Argentina</title>
+  <meta name="description" content="Gestión integral de operaciones para empresas que necesitan más control, información y eficiencia. Infraestructura, mantenimiento, SySO y control de gastos COF.">
+  <meta name="keywords" content="gestión integral de operaciones, mantenimiento edilicio, COF, gastos operativos, facilities, higiene y seguridad, backlog intelligence, Salta, Argentina">
+  <meta name="author" content="LOOKBEN">
+  <meta property="og:title" content="LOOKBEN · Gestión Integral de Operaciones">
+  <meta property="og:description" content="Integramos infraestructura, mantenimiento, Seguridad e Higiene y gastos operativos bajo una misma mirada de gestión.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.png">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="nav">
-  <div class="container nav-in">
-    <a href="#inicio" class="brand">
-      <img src="assets/logo.png" alt="LOOKBEN">
-      <span><b>LOOK</b><strong>BEN</strong></span>
-    </a>
-    <div class="nav-links" id="navLinks">
-      <a href="#servicios">Servicios</a>
-      <a href="#modelo">Modelo de gestión</a>
-      <a href="#control">Gestión y control</a>
-      <a href="#contacto">Contacto</a>
-      <a class="nav-cta" href="https://wa.me/5493624313645?text=Hola%20LOOKBEN!%20Quiero%20conocer%20sus%20servicios%20de%20gesti%C3%B3n%20integral." target="_blank" rel="noopener">WhatsApp</a>
+  <nav>
+    <div class="container nav-in">
+      <a href="#inicio" class="nav-logo">
+        <img src="assets/logo.png" alt="LOOKBEN">
+        <span><span class="look">LOOK</span><span class="ben">BEN</span></span>
+      </a>
+      <div class="nav-links" id="navlinks">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#pilares">Soluciones</a>
+        <a href="#backlog">Backlog Intelligence</a>
+        <a href="#kpis">Paneles & KPIs</a>
+        <a href="#metodo">Modelo de Gestión</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://wa.me/5493624313645?text=Hola%20LOOKBEN!%20Quiero%20consultar%20por%20la%20Gesti%C3%B3n%20Integral%20de%20Operaciones." class="nav-cta">WhatsApp</a>
+      </div>
+      <div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
     </div>
-    <button class="burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-  </div>
-</nav>
+  </nav>
 
-<header class="hero" id="inicio">
-  <div class="hero-glow glow-a"></div><div class="hero-glow glow-b"></div>
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <div class="eyebrow light">LOOKBEN · SALTA CAPITAL</div>
-      <h1>Gestión Integral<br><span>de Operaciones</span></h1>
-      <p class="hero-lead">Seguridad, infraestructura y eficiencia bajo un mismo modelo de gestión.</p>
-      <p class="hero-text">Gestionamos la operación, medimos su desempeño, detectamos oportunidades y generamos mejoras.</p>
-      <div class="hero-actions">
-        <a class="btn btn-wa" href="#servicios">Conocé nuestras soluciones</a>
-        <a class="btn btn-ghost" href="#modelo">Cómo trabajamos</a>
-      </div>
-      <div class="hero-pills">
-        <span>Gestión</span><span>Medición</span><span>Análisis</span><span>Mejora continua</span>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div>
-      <div class="hero-panel">
-        <div class="panel-top"><span>MODELO LOOKBEN</span><i></i></div>
-        <div class="flow-mini">
-          <div><b>01</b><span>Conocer</span></div>
-          <div><b>02</b><span>Planificar</span></div>
-          <div><b>03</b><span>Ejecutar</span></div>
-          <div><b>04</b><span>Medir</span></div>
-          <div><b>05</b><span>Analizar</span></div>
-          <div><b>06</b><span>Mejorar</span></div>
+  <header class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div>
+        <span class="tag-eyebrow" style="color:var(--celeste)">Gestión Integral de Operaciones</span>
+        <h1>Control, información y eficiencia para <span class="hl">tu operación.</span></h1>
+        <p>Integramos infraestructura, mantenimiento, Seguridad e Higiene y gestión de gastos operativos (COF) bajo una metodología unificada de control y toma de decisiones.</p>
+        <div class="hero-cta">
+          <a href="#contacto" class="btn btn-wa">
+            <svg width="22" height="22" viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.6 1.9 6.5L4 29l7.2-1.9c1.8 1 3.9 1.5 6 1.5 7 0 12.5-5.5 12.5-12.5S23 3 16 3Zm5.9 14.3c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.3 4.7 3.1 1.3 3.1.9 3.7.8.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5Z"/></svg>
+            Hablemos de tu operación
+          </a>
+          <a href="#pilares" class="btn btn-outline">Conocé las soluciones</a>
         </div>
-        <div class="panel-foot"><span>OPERACIÓN</span><strong>→</strong><span>RESULTADOS</span></div>
+        <div class="hero-badges">
+          <div class="hb">🏢 Mantenimiento & Obras</div>
+          <div class="hb">🛡️ Seguridad e Higiene</div>
+          <div class="hb">📊 COF & Eficiencia</div>
+        </div>
+      </div>
+      
+      <div class="hero-card hero-widget">
+        <div class="hw-header">
+          <div class="hw-badge">OPERACIÓN CONSOLIDADA</div>
+          <div class="hw-status"><span class="dot"></span> En Monitoreo</div>
+        </div>
+        <div class="hw-stats-grid">
+          <div class="hw-stat">
+            <span class="hw-stat-val">94.8%</span>
+            <span class="hw-stat-lbl">Tasa de Resolución</span>
+          </div>
+          <div class="hw-stat">
+            <span class="hw-stat-val">2.8 d</span>
+            <span class="hw-stat-lbl">TP Cierre Backlog</span>
+          </div>
+        </div>
+        <div class="hw-bar-wrap">
+          <div class="hw-bar-lbl"><span>Cumplimiento Preventivos</span><strong>96%</strong></div>
+          <div class="hw-bar"><div class="hw-fill" style="width:96%;"></div></div>
+        </div>
+        <div class="hw-tags">
+          <span>Multisede</span>
+          <span>Trazabilidad COF</span>
+          <span>Control de Insumos</span>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<section class="trust">
-  <div class="container trust-in">
-    <span><b>01</b> Seguridad e Higiene</span>
-    <span><b>02</b> Mantenimiento y Adecuaciones</span>
-    <span><b>03</b> COF y Gastos Operativos</span>
-  </div>
-</section>
-
-<section class="section" id="servicios">
-  <div class="container center">
-    <div class="eyebrow">NUESTRAS SOLUCIONES</div>
-    <h2 class="h2">Tres áreas. <span>Una misma forma de gestionar.</span></h2>
-    <p class="lead">Servicios concretos respaldados por una estructura de trabajo que permite ordenar, medir y mejorar la operación.</p>
+  <div class="trust">
+    <div class="container trust-in">
+      <span>⚙️ Infraestructura</span>
+      <span>📈 Operación</span>
+      <span>🛡️ Seguridad</span>
+      <span>💡 Eficiencia</span>
+    </div>
   </div>
 
-  <div class="container services-grid">
-    <article class="service-card service-hys">
-      <div class="service-num">01</div>
-      <div class="service-icon">⌁</div>
-      <h3>Seguridad e Higiene</h3>
-      <p class="service-sub">Prevención · Cumplimiento · Protección</p>
-      <p>Soluciones profesionales para gestionar las necesidades de Seguridad e Higiene de tu operación.</p>
-      <div class="chips"><span>Estudio de Seguridad</span><span>Incendios</span><span>Evacuación</span><span>Mediciones</span><span>Servicio Externo</span><span>Capacitaciones</span></div>
-      <button class="detail-btn" data-modal="hys">Ver servicios →</button>
-    </article>
+  <section class="section" id="pilares">
+    <div class="container center">
+      <span class="tag-eyebrow">Nuestras Soluciones</span>
+      <h2 class="h2">Los Tres Pilares Operativos</h2>
+      <p class="lead">No gestionamos áreas como islas aisladas. Consolidamos los frentes clave en una única mirada estratégica.</p>
+    </div>
 
-    <article class="service-card service-facility">
-      <div class="service-num">02</div>
-      <div class="service-icon">⌂</div>
-      <h3>Mantenimiento y Adecuaciones</h3>
-      <p class="service-sub">Infraestructura · Continuidad · Mejora</p>
-      <p>Mantenimiento, infraestructura y adecuaciones gestionados con seguimiento, prioridades e indicadores.</p>
-      <div class="chips"><span>Mantenimiento Integral</span><span>Obras y Adecuaciones</span><span>Edificios</span><span>Proveedores</span><span>Energía</span><span>Space Planning</span><span>Footprint</span><span>CAPEX</span></div>
-      <button class="detail-btn" data-modal="facility">Ver alcance →</button>
-    </article>
+    <div class="container pilar-grid">
+      <div class="pcard">
+        <div class="pcard-ic" style="background:var(--teal)">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <span class="pcard-num">01 · CONSOLIDADO</span>
+        <h3>Seguridad e Higiene</h3>
+        <p>Cumplimiento normativo, habilitaciones comerciales y resguardo de las personas e instalaciones con marco legal y profesional.</p>
+        <ul class="pcard-list">
+          <li>Estudios de Seguridad y Visados COPAIPA</li>
+          <li>Planes de autoprotección y evacuación</li>
+          <li>Mediciones técnicas de ambiente laboral</li>
+          <li>Gestión continua con ART y legajos técnicos</li>
+        </ul>
+      </div>
 
-    <article class="service-card service-cof">
-      <div class="service-num">03</div>
-      <div class="service-icon">◫</div>
-      <h3>Gestión de COF y Gastos Operativos</h3>
-      <p class="service-sub">Control · Análisis · Eficiencia</p>
-      <p>Convertimos la información de los gastos operativos en herramientas para decidir y mejorar.</p>
-      <div class="chips"><span>Auditoría de COF</span><span>Budget & Forecast</span><span>Trazabilidad</span><span>Proveedores</span><span>Pareto</span><span>Eficiencia</span><span>KPIs</span><span>Dashboard</span></div>
-      <button class="detail-btn" data-modal="cof">Ver alcance →</button>
-    </article>
-  </div>
-</section>
+      <div class="pcard featured">
+        <div class="pcard-ic" style="background:var(--azul)">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <span class="pcard-num">02 · GESTIÓN TÉCNICA</span>
+        <h3>Mantenimiento & Adecuaciones</h3>
+        <p>Infraestructura gestionada de manera planificada y trazable: preventivos, correctivos y control estricto de proveedores.</p>
+        <ul class="pcard-list">
+          <li>Matriz de Mantenimiento Preventivo</li>
+          <li>Gestión y priorización de Backlog por sede</li>
+          <li>Administración y control de horas proveedor</li>
+          <li>Proyectos de adecuación edilicia y CAPEX</li>
+        </ul>
+      </div>
 
-<section class="section model-section" id="modelo">
-  <div class="container">
-    <div class="model-head">
+      <div class="pcard">
+        <div class="pcard-ic" style="background:var(--violeta)">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span class="pcard-num">03 · EFICIENCIA</span>
+        <h3>COF & Gastos Operativos</h3>
+        <p>Transformación del gasto operativo en datos para auditar, encontrar desvíos y optimizar presupuestos de operación.</p>
+        <ul class="pcard-list">
+          <li>Auditoría y control de facturación COF</li>
+          <li>Seguimiento de Budget & Forecast mensual</li>
+          <li>Trazabilidad por sede, rubro y footprint</li>
+          <li>Identificación de palancas de ahorro</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--gris)" id="backlog">
+    <div class="container center">
+      <span class="tag-eyebrow">Capacidad Transversal</span>
+      <h2 class="h2">Backlog Intelligence</h2>
+      <p class="lead">No es una simple lista de tareas pendientes. Es un sistema integral de lectura operativa, criticidad y aprendizaje continuo.</p>
+    </div>
+
+    <div class="container backlog-grid">
+      <div class="backlog-desc">
+        <h3>Priorización dinámica por criticidad y sede</h3>
+        <p>Permite visualizar el estado en tiempo real de cada requerimiento de mantenimiento o infraestructura, midiendo los tiempos de ciclo y la respuesta de los prestadores.</p>
+        
+        <div class="feature-item">
+          <div class="f-ic">✓</div>
+          <div><strong>Clasificación P0 a P3:</strong> Asignación de prioridades según el impacto operativo directo.</div>
+        </div>
+        <div class="feature-item">
+          <div class="f-ic">✓</div>
+          <div><strong>Tiempo Activo (TP):</strong> Monitoreo de días transcurridos para evitar desvíos en SLA.</div>
+        </div>
+        <div class="feature-item">
+          <div class="f-ic">✓</div>
+          <div><strong>Planes de Acción:</strong> Conversión de casos recurrentes en mejoras definitivas de procesos.</div>
+        </div>
+      </div>
+
+      <div class="backlog-board">
+        <div class="b-head">
+          <span>CASO / SEDE</span>
+          <span>CRITICIDAD</span>
+          <span>ESTADO</span>
+        </div>
+        <div class="b-row">
+          <div><strong>#1042 · Central Salta</strong><small>Climatización Sala Servidores</small></div>
+          <div><span class="badge crit-p0">P0 - Alta</span></div>
+          <div><span class="badge stat-run">En Proceso</span></div>
+        </div>
+        <div class="b-row">
+          <div><strong>#1039 · Sede Norte</strong><small>Adecuación Tablero Eléctrico</small></div>
+          <div><span class="badge crit-p1">P1 - Media</span></div>
+          <div><span class="badge stat-plan">Planificado</span></div>
+        </div>
+        <div class="b-row">
+          <div><strong>#1035 · Sucursal Sur</strong><small>Recarga Matafuegos Anexo</small></div>
+          <div><span class="badge crit-p2">P2 - Rutina</span></div>
+          <div><span class="badge stat-done">Completado</span></div>
+        </div>
+        <div class="b-footer">
+          <span>* Visualización demostrativa del panel de control de casos.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="kpis">
+    <div class="container center">
+      <span class="tag-eyebrow">Decisiones con Datos</span>
+      <h2 class="h2">Intelligence & Executive Dashboards</h2>
+      <p class="lead">Convertimos la operación diaria en métricas claras para la toma de decisiones gerenciales.</p>
+    </div>
+
+    <div class="container kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-tag">MÉTRICA GLOBAL</div>
+        <div class="kpi-val">96.2%</div>
+        <h3>Tasa de Cumplimiento</h3>
+        <p>Ejecución efectiva de cronogramas preventivos en tiempo y forma.</p>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-tag">GESTIÓN COF</div>
+        <div class="kpi-val">-14%</div>
+        <h3>Optimización de Desvíos</h3>
+        <p>Reducción de sobrecostos no planificados en gastos de servicios.</p>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-tag">EFICIENCIA (IES)</div>
+        <div class="kpi-val">88/100</div>
+        <h3>Índice Operativo</h3>
+        <p>Puntuación balanceada entre costo, velocidad y calidad de servicio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--gris)" id="modulos">
+    <div class="container grid-2col">
+      
+      <div class="special-card">
+        <div class="sc-head">
+          <div class="sc-ic" style="background:var(--salmon)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div>
+            <h3>Energía & Potencias</h3>
+            <span class="sc-sub">Seguimiento y Eficiencia Energética</span>
+          </div>
+        </div>
+        <p>Lectura analítica del consumo eléctrico, control de potencias contratadas y detección temprana de desvíos tarifarios o reactivos.</p>
+        <ul class="pcard-list">
+          <li>Comparativas de consumo entre edificios y sucursales</li>
+          <li>Identificación de picos y penalizaciones por potencia</li>
+          <li>Planes de acción para uso eficiente de recursos</li>
+        </ul>
+      </div>
+
+      <div class="special-card">
+        <div class="sc-head">
+          <div class="sc-ic" style="background:var(--teal)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div>
+            <h3>SIGCIL</h3>
+            <span class="sc-sub">Sistema de Gestión de Insumos de Limpieza</span>
+          </div>
+        </div>
+        <p>Módulo de trazabilidad y gobernanza sobre consumos, reposiciones periódicas y stock operativo para múltiples ubicaciones.</p>
+        <ul class="pcard-list">
+          <li>Control de inventario por sede y frecuencia de uso</li>
+          <li>Detección de consumos anómalos y desvíos presupuestarios</li>
+          <li>Predictivo de compras según cronograma de ocupación</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="metodo">
+    <div class="container center">
+      <span class="tag-eyebrow">Metodología de Trabajo</span>
+      <h2 class="h2">El Ciclo Operativo LOOKBEN</h2>
+      <p class="lead">Un enfoque sistemático diseñado para ordenar, estabilizar y mejorar cualquier operación edilicia.</p>
+    </div>
+
+    <div class="container flow">
+      <div class="fstep"><div class="fn">1</div><h3>Relevar</h3><p>Contexto, sedes, proveedores y activos.</p></div>
+      <div class="fstep"><div class="fn">2</div><h3>Diagnosticar</h3><p>Detección de riesgos, cuellos de botella y desvíos.</p></div>
+      <div class="fstep"><div class="fn">3</div><h3>Planificar</h3><p>Prioridades, asignación de recursos y cronogramas.</p></div>
+      <div class="fstep"><div class="fn">4</div><h3>Ejecutar</h3><p>Control riguroso en campo y coordinación.</p></div>
+      <div class="fstep"><div class="fn">5</div><h3>Medir</h3><p>Seguimiento de KPIs, backlog y costos.</p></div>
+      <div class="fstep"><div class="fn">6</div><h3>Mejorar</h3><p>Acciones correctivas y captura de eficiencias.</p></div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff;" id="estructura">
+    <div class="container center">
+      <span class="tag-eyebrow">Gobernanza Operativa</span>
+      <h2 class="h2">Arquitectura de Gestión Estandarizada</h2>
+      <p class="lead">Estructura inspirada en los principios rectores de sistemas de gestión de alto nivel.</p>
+    </div>
+
+    <div class="container hls-grid">
+      <div class="hls-card">
+        <h4>1. Alcance & Criterios</h4>
+        <p>Definición rigurosa de las instalaciones, servicios y parámetros bajo gestión.</p>
+      </div>
+      <div class="hls-card">
+        <h4>2. Liderazgo & Roles</h4>
+        <p>Mecanismos claros de toma de decisiones y responsabilidades asignadas.</p>
+      </div>
+      <div class="hls-card">
+        <h4>3. Planificación de Riesgos</h4>
+        <p>Identificación preventiva de contingencias edilicias y operativas.</p>
+      </div>
+      <div class="hls-card">
+        <h4>4. Soporte & Trazabilidad</h4>
+        <p>Registro de información, competencias técnicas y trazabilidad documental.</p>
+      </div>
+      <div class="hls-card">
+        <h4>5. Operación en Campo</h4>
+        <p>Control y documentación de procesos diarios y adecuaciones físicas.</p>
+      </div>
+      <div class="hls-card">
+        <h4>6. Evaluación & Mejora</h4>
+        <p>Auditoría de desvíos y transformación de aprendizajes en nuevos estándares.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--gris)" id="sectores">
+    <div class="container center">
+      <span class="tag-eyebrow">Aplicaciones</span>
+      <h2 class="h2">Diseñado para Operaciones Exigentes</h2>
+      <p class="lead">Soluciones adaptadas a organizaciones con infraestructura física relevante o sedes distribuidas.</p>
+      
+      <div class="sectors">
+        <div class="sector">🏢 Edificios Corporativos</div>
+        <div class="sector">🏪 Cadenas de Comercios</div>
+        <div class="sector">🏭 Plantas & Logística</div>
+        <div class="sector">🏫 Instituciones Educativas</div>
+        <div class="sector">🏥 Centros de Salud</div>
+        <div class="sector">📍 Operaciones Multisede</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ctaband">
+    <div class="container">
+      <h2>¿Querés conocer el estado real de tu operación?</h2>
+      <p>Coordinemos una conversación para relevar tus instalaciones y detectar oportunidades de control, orden y ahorro.</p>
+      <a href="https://wa.me/5493624313645?text=Hola%20LOOKBEN!%20Quiero%20coordinar%20una%20reuni%C3%B3n%20para%20evaluar%20nuestra%20operaci%C3%B3n." class="btn btn-wa" style="background:#fff;color:var(--violeta);">
+        💬 Iniciar conversación sin cargo
+      </a>
+    </div>
+  </section>
+
+  <section class="section contact" id="contacto">
+    <div class="container contact-grid">
+      <div class="cinfo">
+        <h2>Hablemos de tu empresa</h2>
+        <p>Completá el formulario o comunicate directo. Analizamos tu estructura de sedes y te presentamos una propuesta adaptada.</p>
+        <div class="cline">
+          <div class="ci">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="#88D2F8"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.6 1.9 6.5L4 29l7.2-1.9c1.8 1 3.9 1.5 6 1.5 7 0 12.5-5.5 12.5-12.5S23 3 16 3Z"/></svg>
+          </div>
+          <div><strong>WhatsApp Directo</strong><br>362 431-3645</div>
+        </div>
+        <div class="cline">
+          <div class="ci">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#88D2F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </div>
+          <div><strong>Email Institucional</strong><br>lookbenhys@gmail.com</div>
+        </div>
+        <div class="cline">
+          <div class="ci">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#88D2F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          </div>
+          <div><strong>Ubicación</strong><br>Salta Capital, Argentina</div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <form id="opsForm" onsubmit="return enviarConsultaOperaciones(event)">
+          <label>Empresa / Organización</label>
+          <input type="text" id="f_empresa" placeholder="Ej: Grupo Norte S.A." required>
+
+          <label>Persona de Contacto</label>
+          <input type="text" id="f_contacto" placeholder="Nombre y apellido" required>
+
+          <label>Cantidad de Sedes / Ubicaciones</label>
+          <select id="f_sedes">
+            <option value="1 sede">1 sede / edificio principal</option>
+            <option value="2 a 5 sedes">2 a 5 sedes</option>
+            <option value="Más de 5 sedes">Más de 5 sedes distribuidas</option>
+          </select>
+
+          <label>Servicio / Foco Principal</label>
+          <select id="f_interes">
+            <option value="Gestión Integral Completa">Gestión Integral de Operaciones</option>
+            <option value="Mantenimiento y Adecuaciones">Mantenimiento Edilicio & Backlog</option>
+            <option value="Control de COF y Gastos">Control de COF & Gastos Operativos</option>
+            <option value="Seguridad e Higiene">Seguridad e Higiene Laboral</option>
+          </select>
+
+          <label>Consulta o necesidad puntual</label>
+          <textarea id="f_mensaje" placeholder="Contanos brevemente qué desafíos tienen actualmente..."></textarea>
+
+          <button type="submit" class="btn btn-wa">
+            <svg width="22" height="22" viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.6 1.9 6.5L4 29l7.2-1.9c1.8 1 3.9 1.5 6 1.5 7 0 12.5-5.5 12.5-12.5S23 3 16 3Z"/></svg>
+            Consultar por WhatsApp
+          </button>
+          <p class="form-note">Se abrirá WhatsApp con los datos listos para ser enviados al instante.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot-grid">
       <div>
-        <div class="eyebrow">NUESTRO MODELO DE GESTIÓN</div>
-        <h2 class="h2">Una estructura pensada para <span>mejorar la operación.</span></h2>
+        <div class="foot-logo">
+          <img src="assets/logo.png" alt="LOOKBEN">
+          <span><span class="look">LOOK</span><span class="ben">BEN</span></span>
+        </div>
+        <p style="font-size:14px;max-width:320px;">Gestión Integral de Operaciones, Infraestructura, SySO y Control de Gastos para organizaciones en Argentina.</p>
+        <p style="margin-top:14px;font-size:13px;color:#8a7d99;">Operación · Control · Información · Eficiencia</p>
       </div>
-      <p>La metodología de trabajo se adapta al servicio y a la realidad de cada organización, manteniendo una lógica común de análisis, ejecución, medición y mejora.</p>
-    </div>
-
-    <div class="cycle">
-      <div class="cycle-line"></div>
-      <div class="cycle-item"><span>01</span><div class="cycle-icon">⌕</div><h3>Conocer</h3><p>Contexto, necesidades y prioridades.</p></div>
-      <div class="cycle-item"><span>02</span><div class="cycle-icon">◌</div><h3>Planificar</h3><p>Objetivos, recursos, riesgos y oportunidades.</p></div>
-      <div class="cycle-item"><span>03</span><div class="cycle-icon">▶</div><h3>Ejecutar</h3><p>Servicios, acciones y gestión operativa.</p></div>
-      <div class="cycle-item"><span>04</span><div class="cycle-icon">▥</div><h3>Medir</h3><p>Indicadores, cumplimiento y desempeño.</p></div>
-      <div class="cycle-item"><span>05</span><div class="cycle-icon">⌁</div><h3>Analizar</h3><p>Desvíos, tendencias y oportunidades.</p></div>
-      <div class="cycle-item"><span>06</span><div class="cycle-icon">↻</div><h3>Mejorar</h3><p>Acciones, seguimiento y resultados.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section control-section" id="control">
-  <div class="container center">
-    <div class="eyebrow">GESTIÓN Y CONTROL</div>
-    <h2 class="h2">La información se convierte en <span>gestión.</span></h2>
-    <p class="lead">Una capa transversal que puede aplicarse a mantenimiento, COF, Seguridad, edificios y sedes.</p>
-  </div>
-
-  <div class="container intelligence-grid">
-    <article class="intel-card featured">
-      <div class="intel-icon">↗</div>
-      <div class="intel-tag">GESTIÓN INTELIGENTE</div>
-      <h3>Backlog</h3>
-      <p>Priorización, trazabilidad, seguimiento y control hasta la resolución.</p>
-      <div class="mini-metrics"><span>Casos</span><span>Prioridades</span><span>Tiempos</span><span>Resolución</span></div>
-    </article>
-    <article class="intel-card"><div class="intel-icon">%</div><h3>KPIs</h3><p>Cumplimiento, performance y evolución.</p></article>
-    <article class="intel-card"><div class="intel-icon">▤</div><h3>Dashboards</h3><p>Operación, información ejecutiva y comparativas.</p></article>
-    <article class="intel-card"><div class="intel-icon">⌁</div><h3>Tendencias</h3><p>Evolución, comportamiento y proyección.</p></article>
-    <article class="intel-card"><div class="intel-icon">!</div><h3>Alertas</h3><p>Desvíos, riesgos e incumplimientos.</p></article>
-    <article class="intel-card"><div class="intel-icon">✓</div><h3>Planes de acción</h3><p>Responsables, seguimiento y cierre.</p></article>
-  </div>
-
-  <div class="container analysis-band">
-    <div><strong>ANÁLISIS Y DESEMPEÑO</strong><span>Diseño de KPIs</span><span>Pareto</span><span>Comparativas</span><span>Matrices de riesgo</span><span>IES</span></div>
-  </div>
-</section>
-
-<section class="section applications">
-  <div class="container">
-    <div class="model-head">
       <div>
-        <div class="eyebrow">APLICACIÓN TRANSVERSAL</div>
-        <h2 class="h2">Una misma estructura.<br><span>Diferentes necesidades.</span></h2>
+        <h4>Soluciones</h4>
+        <ul>
+          <li><a href="#pilares">Mantenimiento & Adecuaciones</a></li>
+          <li><a href="#pilares">COF & Gastos Operativos</a></li>
+          <li><a href="#pilares">Seguridad e Higiene</a></li>
+          <li><a href="#backlog">Backlog Intelligence</a></li>
+          <li><a href="#modulos">SIGCIL & Energía</a></li>
+        </ul>
       </div>
-      <p>La gestión se adapta a cada área sin perder trazabilidad ni una visión común de la operación.</p>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>📱 362 431-3645</li>
+          <li>✉️ lookbenhys@gmail.com</li>
+          <li>📍 Salta Capital, Argentina</li>
+          <li><a href="https://wa.me/5493624313645?text=Hola%20LOOKBEN!%20Quiero%20consultar%20por%20sus%20servicios.">💬 Iniciar chat directo</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="application-grid">
-      <div class="app-card"><b>INFRAESTRUCTURA</b><strong>Backlog · Preventivos · Proveedores</strong><small>Casos por sede · prioridades · tiempos · cumplimiento</small></div>
-      <div class="app-card"><b>COF</b><strong>Gastos · Desvíos · Eficiencias</strong><small>Budget · Forecast · Pareto · trazabilidad</small></div>
-      <div class="app-card"><b>SEGURIDAD</b><strong>Cumplimiento · Hallazgos · Acciones</strong><small>Seguimiento · evaluación · planes de acción</small></div>
-      <div class="app-card"><b>SEDES</b><strong>Comparativas · Rankings · Tendencias</strong><small>Estado · cumplimiento · evolución</small></div>
+    <div class="container foot-bottom">
+      © 2026 LOOKBEN · Gestión Integral de Operaciones · Salta Capital, Argentina.
+      <p class="foot-legal">La información expuesta en este sitio describe capacidades y marcos metodológicos de gestión de operaciones, infraestructura y SySO. No constituye asesoramiento legal vinculante ni certificación formal de normas por parte de terceros sin contrato específico.</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="section capability-section">
-  <div class="container capability-grid">
-    <div>
-      <div class="eyebrow">CAPACIDADES ESPECÍFICAS</div>
-      <h2 class="h2">De la operación diaria al <span>nivel ejecutivo.</span></h2>
-      <p class="lead">La gestión puede incorporar distintos niveles de análisis según la necesidad de cada organización.</p>
-    </div>
-    <div class="cap-list">
-      <div><span>01</span><b>Gestión de proveedores</b><em>Prestación · tiempos · cumplimiento</em></div>
-      <div><span>02</span><b>Gestión energética</b><em>Energía · potencias · comparativas · tendencias</em></div>
-      <div><span>03</span><b>Executive Dashboard</b><em>Resúmenes · evolución · indicadores</em></div>
-      <div><span>04</span><b>Matriz de Preventivos</b><em>Por sede · cumplimiento · alertas</em></div>
-      <div><span>05</span><b>Plan de acción</b><em>Responsables · seguimiento · cierre</em></div>
-      <div><span>06</span><b>SIGCIL</b><em>Sistema Integral de Gestión y Control de Insumos de Limpieza</em></div>
-    </div>
-  </div>
-</section>
+  <a href="https://wa.me/5493624313645?text=Hola%20LOOKBEN!%20Quiero%20consultar%20por%20la%20Gesti%C3%B3n%20Integral%20de%20Operaciones." class="wa-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.6 1.9 6.5L4 29l7.2-1.9c1.8 1 3.9 1.5 6 1.5 7 0 12.5-5.5 12.5-12.5S23 3 16 3Zm5.9 14.3c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.3 4.7 3.1 1.3 3.1.9 3.7.8.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5Z"/></svg>
+  </a>
 
-<section class="cta-section" id="contacto">
-  <div class="container cta-box">
-    <div>
-      <div class="eyebrow light">LOOKBEN · SALTA</div>
-      <h2>Gestionar mejor también es <span>conocer mejor la operación.</span></h2>
-      <p>Contanos qué necesitás. Analizamos tu operación y proponemos una estructura de trabajo adecuada a tus necesidades.</p>
-    </div>
-    <a class="btn btn-wa big" href="https://wa.me/5493624313645?text=Hola%20LOOKBEN!%20Quiero%20consultar%20por%20sus%20servicios%20de%20gesti%C3%B3n%20integral." target="_blank" rel="noopener">Hablemos con LOOKBEN →</a>
-  </div>
-</section>
-
-<footer>
-  <div class="container footer-grid">
-    <div class="footer-brand"><img src="assets/logo.png" alt="LOOKBEN"><div><b>LOOK</b><strong>BEN</strong></div><p>Gestión Integral de Operaciones · Salta Capital, Argentina.</p></div>
-    <div><h4>Servicios</h4><a href="#servicios">Seguridad e Higiene</a><a href="#servicios">Mantenimiento y Adecuaciones</a><a href="#servicios">Gestión de COF</a></div>
-    <div><h4>Contacto</h4><a href="https://wa.me/5493624313645" target="_blank" rel="noopener">WhatsApp · 362 431-3645</a><a href="mailto:lookbenhys@gmail.com">lookbenhys@gmail.com</a><span>Salta Capital, Argentina</span></div>
-  </div>
-  <div class="container footer-bottom">© 2026 LOOKBEN · Gestión Integral de Operaciones</div>
-</footer>
-
-<div class="modal-overlay" id="modalOverlay">
-  <div class="modal" role="dialog" aria-modal="true">
-    <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
-    <div id="modalContent"></div>
-  </div>
-</div>
-
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
